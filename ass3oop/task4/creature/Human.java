@@ -1,0 +1,20 @@
+package task4.creature;
+
+import task4.move.MoveLogic;
+import task4.sound.SoundLogic;
+
+public class Human extends Creature {
+
+    public Human(MoveLogic moveLogic, SoundLogic soundLogic) {
+        super(moveLogic, soundLogic);
+    }
+
+    @Override
+    public String getName() {
+        return "Person";
+    }
+
+    public void searchMeaningOfLife() {
+        System.out.println(getName() + " looking for the meaning of life.");
+    }
+}

@@ -1,0 +1,12 @@
+package task8.middles;
+
+
+
+public class PythonMiddle implements MiddleDeveloper {
+
+    @Override
+    public void writeNewModule() {
+        System.out.println("Пишет новый модуль для системы машинного обучения.");
+    }
+}
+
