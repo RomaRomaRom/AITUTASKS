@@ -13,5 +13,14 @@ public class Main {
         for (int i = 0; i < 11; i++) {
             System.out.println("Bucket " + i + ": " + table.getBucketSize(i));
         }
+
+        BST<Integer, String> tree = new BST<>();
+        tree.put(5, "five");
+        tree.put(3, "three");
+        tree.put(7, "seven");
+
+        for (var elem : tree.iterator()) {
+            System.out.println("key is " + elem.getKey() + " and value is " + elem.getValue());
+}
     }
 }
